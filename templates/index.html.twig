@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Movie Page
+{% endblock %}
+
+{% block body %}
+
+    {% if title %}
+        <p>{{title}} is a movie</p>
+    {% else %}
+        <p>No movie was provided</p>
+    {% endif %}
+
+{% endblock %}
