@@ -5,11 +5,15 @@
 {% endblock %}
 
 {% block body %}
+    {% for movie in movies %}
+        <li>{{movie}}</li>
+    {% endfor %}
 
-    {% if title %}
+
+    {# {% if title %}
         <p>{{title}} is a movie</p>
     {% else %}
         <p>No movie was provided</p>
-    {% endif %}
+    {% endif %} #}
 
 {% endblock %}
