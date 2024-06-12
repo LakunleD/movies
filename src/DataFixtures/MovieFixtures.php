@@ -15,6 +15,8 @@ class MovieFixtures extends Fixture
         $movie->setReleaseYear(2008);
         $movie->setDescription("This is the description of Dark Knight");
         $movie->setImagePath("https://cdn.pixabay.com/photo/2024/01/15/11/36/batman-8510022_1280.png");
+        $movie->addActor($this->getReference('actor_1'));
+        $movie->addActor($this->getReference('actor_2'));
 
         $manager->persist($movie);
 
@@ -23,6 +25,9 @@ class MovieFixtures extends Fixture
         $movie2->setReleaseYear(2019);
         $movie2->setDescription("This is the description of Avenger: Endgame");
         $movie2->setImagePath("https://cdn.pixabay.com/photo/2021/07/20/14/59/iron-man-6480952_1280.jpg");
+        
+        $movie2->addActor($this->getReference('actor_3'));
+        $movie2->addActor($this->getReference('actor_4'));
 
         $manager->persist($movie2);
 
