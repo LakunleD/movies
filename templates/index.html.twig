@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block body %}
+    {{ author }}
     {% for movie in movies %}
         <li>{{movie}}</li>
     {% endfor %}
